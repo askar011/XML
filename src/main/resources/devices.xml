@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+         xmlns="http://www.example.com/device"
+         xsi:schemaLocation="http://www.example.com/device deviceSchema.xsd">
+
+    <element id="1" typeName="videochip">
+        <name>Gigabyte GeForce GTX 970</name>
+        <origin>China</origin>
+        <price>500</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>true</has_cooler>
+            <port_list>
+                <port>COM</port>
+            </port_list>
+            <energy_use>120</energy_use>
+        </type>
+        <critical>true</critical>
+    </element>
+    <element id="2" typeName="videochip">
+        <name>
+            Gigabyte GeForce GTX 980
+        </name>
+        <origin>
+            USA
+        </origin>
+        <price>550</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>true</has_cooler>
+            <port_list>
+                <port>COM</port>
+            </port_list>
+        </type>
+        <energy_use>150</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="3" typeName="videochip">
+        <name>
+            Gigabyte GeForce GTX 1070
+        </name>
+        <origin>
+            Canada
+        </origin>
+        <price>1000</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>true</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+            </port_list>
+        </type>
+        <energy_use>120</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="4" typeName="mouse">
+        <name>
+            Mouse Zowie
+        </name>
+        <origin>
+            England
+        </origin>
+        <price>50</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>20</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="5" typeName="mouse">
+        <name>
+            Mouse 4Tech
+        </name>
+        <origin>
+            China
+        </origin>
+        <price>50</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>20</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="6" typeName="mouse">
+        <name>
+            Mouse Logitech g502
+        </name>
+        <origin>
+            USA
+        </origin>
+        <price>80</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>20</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="7" typeName="printer">
+        <name>
+            Printer GH500
+        </name>
+        <origin>
+            USA
+        </origin>
+        <price>1000</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>50</energy_use>
+        <critical>false</critical>
+    </element>
+    <element id="8" typeName="printer">
+        <name>
+            Printer dts400
+        </name>
+        <origin>
+            Russia
+        </origin>
+        <price>300</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>60</energy_use>
+        <critical>false</critical>
+    </element>
+    <element id="9" typeName="printer">
+        <name>
+            Printer DTD4
+        </name>
+        <origin>
+            China
+        </origin>
+        <price>200</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+                <port>LPT</port>
+            </port_list>
+        </type>
+        <energy_use>50</energy_use>
+        <critical>false</critical>
+    </element>
+    <element id="10" typeName="headphone">
+        <name>
+            Headphone Hyperx
+        </name>
+        <origin>
+            USA
+        </origin>
+        <price>300</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+                <port>LPT</port>
+            </port_list>
+        </type>
+        <energy_use>30</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="11" typeName="headphone">
+        <name>
+            Headphone Logitech
+        </name>
+        <origin>
+            England
+        </origin>
+        <price>350</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>USB</port>
+                <port>Adapter</port>
+            </port_list>
+        </type>
+        <energy_use>30</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="12" typeName="headphone">
+        <name>
+            Headphone DBD
+        </name>
+        <origin>
+            China
+        </origin>
+        <price>200</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>USB</port>
+            </port_list>
+        </type>
+        <energy_use>30</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="13" typeName="monitor">
+        <name>
+            Monitor LG
+        </name>
+        <origin>
+            USA
+        </origin>
+        <price>300</price>
+        <type>
+            <group>Multimedia</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+                <port>LPT</port>
+            </port_list>
+        </type>
+        <energy_use>30</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="14" typeName="monitor">
+        <name>
+            Monitor Bench
+        </name>
+        <origin>
+            Netherland
+        </origin>
+        <price>250</price>
+        <type>
+            <group>Multimedia</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+            </port_list>
+        </type>
+        <energy_use>30</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="15" typeName="monitor">
+        <name>
+            Monitor Samsung
+        </name>
+        <origin>
+            China
+        </origin>
+        <price>350</price>
+        <type>
+            <group>Multimedia</group>
+            <peripheral>true</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>LPT</port>
+            </port_list>
+        </type>
+        <energy_use>40</energy_use>
+        <critical>true</critical>
+    </element>
+    <element id="16" typeName="cooler">
+        <name>
+            Cooler XFyer
+        </name>
+        <origin>
+            China
+        </origin>
+        <price>200</price>
+        <type>
+            <group>INPUT_OUTPUT</group>
+            <peripheral>false</peripheral>
+            <has_cooler>false</has_cooler>
+            <port_list>
+                <port>HDMI</port>
+                <port>COM</port>
+                <port>LPT</port>
+            </port_list>
+        </type>
+        <energy_use>100</energy_use>
+        <critical>true</critical>
+    </element>
+
+
+</devices>
