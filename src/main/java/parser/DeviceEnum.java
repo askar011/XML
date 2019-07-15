@@ -2,6 +2,8 @@ package parser;
 
 public enum DeviceEnum {
     DEVICES("devices"),
+    ID("id"),
+    TYPE_NAME("typeName"),
     ELEMENT("element"),
     NAME("name"),
     ORIGIN("origin"),

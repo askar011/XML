@@ -2,6 +2,8 @@ package parser.dom;
 
 import entity.Device;
 import entity.Type;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -13,11 +15,9 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
 
 public class DOMParser extends AbstractParser {
-
+    private static final Logger LOGGER = LogManager.getLogger(DOMParser.class);
     private static DOMParser instance;
     private DocumentBuilder documentBuilder;
 
@@ -50,6 +50,7 @@ public class DOMParser extends AbstractParser {
                 if (node instanceof Element) {
                     Element deviceElement = (Element) node;
                     Device device = initDevice(deviceElement);
+                    LOGGER.info(device.toString());
                     deviceStore.add(device);
                 }
             }
@@ -71,7 +72,7 @@ public class DOMParser extends AbstractParser {
         boolean hasCooler = Boolean.parseBoolean(getElementTextContent(deviceElement, "has_cooler"));
         Type type = new Type(group, peripheral, hasCooler);
         addPorts(deviceElement, type);
-        
+
         int energyUse = Integer.parseInt(getElementTextContent(deviceElement, "energy_use").trim());
         boolean critical = Boolean.parseBoolean(getElementTextContent(deviceElement, "critical"));
         Device device = new Device(id, typeName, name, origin, price, type, energyUse, critical);
