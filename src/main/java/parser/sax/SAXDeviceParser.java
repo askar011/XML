@@ -1,6 +1,7 @@
 package parser.sax;
 
-import entity.Store;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 import parser.AbstractParser;
 
@@ -10,12 +11,11 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
 public class SAXDeviceParser extends AbstractParser {
-
+    private static final Logger LOGGER = LogManager.getLogger(SAXDeviceParser.class);
     private static SAXDeviceParser instance;
     private SAXParserHandler saxParserHandler;
     private SAXParserFactory factory;
     private SAXParser parser;
-    private Store store;
 
     public static SAXDeviceParser getInstance() {
         if (instance == null) {
@@ -31,7 +31,7 @@ public class SAXDeviceParser extends AbstractParser {
             factory = SAXParserFactory.newInstance();
             parser = factory.newSAXParser();
         } catch (SAXException | ParserConfigurationException e) {
-            e.printStackTrace();
+            LOGGER.error(e);
         }
     }
 
@@ -40,7 +40,7 @@ public class SAXDeviceParser extends AbstractParser {
         try {
             parser.parse(fileName, saxParserHandler);
         } catch (SAXException | IOException e) {
-            e.printStackTrace();
+            LOGGER.error(e);
         }
         deviceStore = saxParserHandler.getStore();
     }

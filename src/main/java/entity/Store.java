@@ -10,7 +10,6 @@ public class Store {
 
     private List<Device> deviceList = new ArrayList<>();
 
-
     public List<Device> getDeviceList() {
         return Collections.unmodifiableList(deviceList);
     }

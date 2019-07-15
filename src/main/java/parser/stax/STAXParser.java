@@ -5,27 +5,24 @@ import entity.Type;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import parser.AbstractParser;
-import parser.DeviceEnum;
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.*;
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.EnumSet;
 
 public class STAXParser extends AbstractParser {
     private static final Logger LOGGER = LogManager.getLogger(STAXParser.class);
     private static STAXParser instance;
-    private XMLInputFactory inputFactory;
-    private EnumSet<DeviceEnum> deviceTypes;
 
     private STAXParser() {
-        inputFactory = XMLInputFactory.newInstance();
-        deviceTypes = EnumSet.range(DeviceEnum.ELEMENT, DeviceEnum.CRITICAL);
+
     }
 
     public static STAXParser getInstance() {
@@ -88,13 +85,14 @@ public class STAXParser extends AbstractParser {
                 if (xmlEvent.isEndElement()) {
                     EndElement endElement = xmlEvent.asEndElement();
                     if (endElement.getName().getLocalPart().equals("element")) {
+                        LOGGER.info(device.toString());
                         deviceStore.add(device);
                     }
                 }
             }
 
         } catch (FileNotFoundException | XMLStreamException exc) {
-            exc.printStackTrace();
+            LOGGER.error(exc);
         }
     }
 }

@@ -26,7 +26,7 @@ public class DOMParser extends AbstractParser {
         try {
             documentBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            e.printStackTrace();
+            LOGGER.error(e);
         }
     }
 
@@ -55,7 +55,7 @@ public class DOMParser extends AbstractParser {
                 }
             }
         } catch (SAXException | IOException e) {
-            e.printStackTrace();
+            LOGGER.error(e);
         }
     }
 
