@@ -14,8 +14,8 @@
             <port_list>
                 <port>COM</port>
             </port_list>
-            <energy_use>120</energy_use>
         </type>
+        <energy_use>120</energy_use>
         <critical>true</critical>
     </element>
     <element id="2" typeName="videochip">

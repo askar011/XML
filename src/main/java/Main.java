@@ -11,5 +11,8 @@ public class Main {
 //        for (int i = 0; i < parserBuider.getDeviceStore().getDeviceList().size(); i++) {
 //            System.out.println(parserBuider.getDeviceStore().getDeviceList().get(i));
 //        }
+
+        int i = parserBuider.getDeviceStore().getDeviceList().size();
+        System.out.println(i);
     }
 }
