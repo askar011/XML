@@ -1,10 +1,10 @@
-package parser.stax;
+package com.askar.xml.parser.stax;
 
-import entity.Device;
-import entity.Type;
+import com.askar.xml.entity.Device;
+import com.askar.xml.entity.Type;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import parser.AbstractParser;
+import com.askar.xml.parser.AbstractParser;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;

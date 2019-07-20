@@ -1,4 +1,4 @@
-package entity;
+package com.askar.xml.entity;
 
 import java.util.ArrayList;
 import java.util.Collections;

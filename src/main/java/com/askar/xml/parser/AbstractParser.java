@@ -1,6 +1,6 @@
-package parser;
+package com.askar.xml.parser;
 
-import entity.Store;
+import com.askar.xml.entity.Store;
 
 public abstract class AbstractParser {
 

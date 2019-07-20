@@ -1,4 +1,4 @@
-package util.validator;
+package com.askar.xml.util.validator;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;

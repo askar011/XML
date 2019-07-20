@@ -1,8 +1,8 @@
-package parser;
+package com.askar.xml.parser;
 
-import parser.dom.DOMParser;
-import parser.sax.SAXDeviceParser;
-import parser.stax.STAXParser;
+import com.askar.xml.parser.dom.DOMParser;
+import com.askar.xml.parser.sax.SAXDeviceParser;
+import com.askar.xml.parser.stax.STAXParser;
 
 public class ParserBuider {
 

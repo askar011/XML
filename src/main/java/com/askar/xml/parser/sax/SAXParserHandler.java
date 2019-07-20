@@ -1,14 +1,14 @@
-package parser.sax;
+package com.askar.xml.parser.sax;
 
-import entity.Device;
-import entity.Store;
-import entity.Type;
+import com.askar.xml.entity.Device;
+import com.askar.xml.entity.Store;
+import com.askar.xml.entity.Type;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import parser.DeviceEnum;
+import com.askar.xml.parser.DeviceEnum;
 
 import java.util.EnumSet;
 

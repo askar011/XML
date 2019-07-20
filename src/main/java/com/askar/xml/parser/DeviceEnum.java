@@ -1,4 +1,4 @@
-package parser;
+package com.askar.xml.parser;
 
 public enum DeviceEnum {
     DEVICES("devices"),

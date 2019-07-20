@@ -1,10 +1,10 @@
-package util.validator;
+package com.askar.xml.util.validator;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
-import util.Constant;
+import com.askar.xml.util.Constant;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;

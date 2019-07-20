@@ -1,9 +1,9 @@
-package parser.sax;
+package com.askar.xml.parser.sax;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
-import parser.AbstractParser;
+import com.askar.xml.parser.AbstractParser;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;

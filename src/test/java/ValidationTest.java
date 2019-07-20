@@ -1,9 +1,9 @@
-import util.Constant;
+import com.askar.xml.util.Constant;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import util.validator.ValidatorXSD;
+import com.askar.xml.util.validator.ValidatorXSD;
 
 public class ValidationTest {
 

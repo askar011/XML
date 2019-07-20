@@ -1,12 +1,12 @@
 package sax;
 
-import util.Constant;
+import com.askar.xml.util.Constant;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import parser.AbstractParser;
-import parser.ParserBuider;
+import com.askar.xml.parser.AbstractParser;
+import com.askar.xml.parser.ParserBuider;
 
 public class SAXParserTest {
     AbstractParser parserBuider = null;

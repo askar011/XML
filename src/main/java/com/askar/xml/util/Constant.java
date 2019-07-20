@@ -1,4 +1,4 @@
-package util;
+package com.askar.xml.util;
 
 public class Constant {
 

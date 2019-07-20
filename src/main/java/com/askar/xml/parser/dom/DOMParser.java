@@ -1,7 +1,7 @@
-package parser.dom;
+package com.askar.xml.parser.dom;
 
-import entity.Device;
-import entity.Type;
+import com.askar.xml.entity.Device;
+import com.askar.xml.entity.Type;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -9,7 +9,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import parser.AbstractParser;
+import com.askar.xml.parser.AbstractParser;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
